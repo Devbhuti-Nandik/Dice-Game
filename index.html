@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dice Game</title>
+    
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="main-container">
+        <header>
+            <div class="app-head"> 
+                <h1>Game of Dice</h1>
+            </div>
+        </header>
+        
+        <div class="gamePlay">
+            <div class="player1-title">
+                <p>Player 1</p>
+                <img class="image1" src="images/dice6.png" alt="dice-image">
+                <button class="btn1" type="submit" onclick="resultGenerate()">Play</button>
+            </div>
+            <div class="player1-title">
+                <p>Player 2</p>
+                <img  class="image2" src="images/dice6.png" alt="dice-image">
+                <button class="btn2" type="submit" onclick="resultGenerate()">Play</button> 
+                <button class="btn3" type="reset" onclick="resetScreen()">Reset</button>
+            </div>
+            <div class="result">
+                <h1>Result</h1>
+            </div>
+        </div> 
+        
+        <footer>
+            <div class="app-foot">&copy; Copyrights 2020</div>
+        </footer>
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+</html>
